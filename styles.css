@@ -1,0 +1,101 @@
+body {
+    background-color: #F9F6EE;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem ;
+}
+
+img {
+    width: 80%;
+    border-radius: 1rem;
+}
+
+.mainbutton {
+    height: 3rem;
+    width: 6rem;
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: #6495ED;
+    border-radius: 1rem;
+    color: #F9F6EE;
+    cursor: pointer;
+    border-style: none;
+    box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem grey;
+}
+
+.hero-section {
+    display: flex;
+    margin-top: 3rem;
+    justify-content: space-evenly;
+}
+
+.input-form {
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: #F9F6EE;
+    box-shadow: 0.5rem 0.5rem 0.5rem 0.5rem grey ;
+    border-radius: 1rem;
+    width: 20%;
+    height: 50%;
+
+}
+
+.dog-info {
+    background-color: #F9F6EE;
+    box-shadow: 0.5rem 0.5rem 0.5rem 0.5rem grey;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem;
+    border-radius: 1rem;
+}
+
+.input-form input {
+    width: 80%;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    border-style: none;
+    box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem grey;
+}
+
+.input-form button {
+    margin-top: 1rem;
+}
+
+#error-message {
+    background-color: #FF7377;
+    padding: 0.5rem;
+    width: 80%;
+    border-radius: 1rem;
+    border-style: none;
+    box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem grey;
+}
+
+.logged-in-section {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 10rem;
+}
+
+.welcome-div {
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: #F9F6EE;
+    box-shadow: 0.5rem 0.5rem 0.5rem 0.5rem grey;
+    border-radius: 1rem;
+    width: 20%;
+    height: 50%;
+}
