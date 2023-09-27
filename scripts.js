@@ -2,6 +2,7 @@
 const USERNAME = "Bella";
 const PASSWORD = "qwe123";
 
+
 //Drar in element som jag kommer behöva manipulera på ett eller annat sätt
 const usernameInput = document.getElementsByClassName("username-input")[0];
 const passwordInput = document.getElementsByClassName("password-input")[0];
@@ -74,12 +75,18 @@ function logInUser() {
     welcomeDiv.appendChild(logoutButton);
     loggedInSection.appendChild(welcomeDiv);
     document.body.appendChild(loggedInSection);
+    localStorage.setItem("loggedin", "yes");
 
     logoutButton.addEventListener("click", () => {
     loggedInSection.style.display = "none";
     heroSection.style.display = "flex";
-})
+    localStorage.removeItem("loggedin", "yes");
+});
 
+}
+
+if(localStorage.getItem("loggedin")) {
+    logInUser()
 }
 
 //En enkel funktion som rensar input fälten efter olika event. Denna kallar jag på 
